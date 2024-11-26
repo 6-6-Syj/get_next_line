@@ -30,23 +30,6 @@ char	*ft_strchr(const char *str, int c)
 	return (NULL);
 }
 
-char	*ft_strdup(const char *s)
-{
-	size_t	i;
-	char	*arr;
-
-	arr = ft_calloc(sizeof(char), ft_strlen(s) + 1);
-	i = 0;
-	if (arr == NULL)
-		return (NULL);
-	while (i < ft_strlen(s))
-	{
-		arr[i] = s[i];
-		i++;
-	}
-	return (arr);
-}
-
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
@@ -55,6 +38,24 @@ size_t	ft_strlen(const char *s)
 	while (s[i] != '\0')
 		i++;
 	return (i);
+}
+
+char	*ft_strdup(const char *s)
+{
+	size_t	i;
+	char	*arr;
+
+	arr = malloc(sizeof(char) * ft_strlen(s) + 1);
+	i = 0;
+	if (arr == NULL)
+		return (NULL);
+	while (i < ft_strlen(s))
+	{
+		arr[i] = s[i];
+		i++;
+	}
+	arr[i] = '\0';
+	return (arr);
 }
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
@@ -68,7 +69,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (ft_strlen(s + start) < len)
 		len = ft_strlen(s + start);
-	temp_s = ft_calloc(len + 1, sizeof(char));
+	temp_s = malloc(len * sizeof(char) + 1);
 	if (temp_s == NULL)
 		return (NULL);
 	i = 0;
@@ -77,6 +78,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 		temp_s[i] = s[start + i];
 		i++;
 	}
+	temp_s[i] = '\0';
 	return (temp_s);
 }
 
