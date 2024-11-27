@@ -20,6 +20,18 @@ static char	*set_line(char *line_buf)
 
 	len = ft_strlen(line_buf);
 	i = 0;
+
+	// while (line_buf[i] != '\n' || line_buf[i] != '\0')
+	// 	i++;
+	// if (line_buf[0] == 0 || line_buf[1] == 0)
+	// 	return (NULL);
+	// left_from_buf = ft_substr(line_buf, i + 1, len - i);
+	// if (!left_from_buf)
+	// 	return (free(left_from_buf), NULL);
+	// line_buf[i + 1] = '\0';
+	// printf("left_from_buf => %s", left_from_buf);
+	// return (left_from_buf);
+
 	while (line_buf[i])
 	{
 		if (i <= BUFFER_SIZE && line_buf[i] == '\n')
@@ -37,32 +49,60 @@ static char	*set_line(char *line_buf)
 	return (left_from_buf);
 }
 
-static char	*fill_line_buffer(int fd, char *left_from_buf, char *buf)
+static char	*fill_buffer(int fd, char *left_from_buf, char *buf)
 {
-	return (0);
+	ssize_t	nb_read;
+	char	*tmp;
+
+	nb_read = 1;
+	while (nb_read > 0)
+	{
+		nb_read = read(fd, buf, BUFFER_SIZE);
+		if (nb_read == -1)
+			return (free(left_from_buf), NULL);
+		else if (nb_read == 0)
+			break;
+		buf[nb_read] = 0;
+		if (!left_from_buf)
+			left_from_buf = ft_strdup("");
+		tmp = left_from_buf;
+		left_from_buf = ft_strjoin(tmp, buf);
+		free(tmp);
+		tmp = NULL;
+		if (ft_strchr(buf, '\n'))
+			break;
+	}
+	return (left_from_buf);
 }
-// READ, FREE, MALLOC
+
 char	*get_next_line(int fd)
 {
 	// DONE --- Recuperer le contenu du buffer et le copy/paste --> *left_from_buf
 	// search '\n', si R, rappeler read ---- si y'a : extraire la ligne ET le '\n'
 	// Ensuite clear le *char
 	// Variable static --> garde ce qu'il y avait avant dans *char
-	static char buf[BUFFER_SIZE + 1];
-	char *line_buf;
+	static char *left_from_buf;
+	char		*buf;
+	char		*line_buf;
 
-	// printf("READ 1 = %zd\n", read(fd, buf, BUFFER_SIZE));
-	read(fd, buf, BUFFER_SIZE);
-
-	line_buf = malloc(BUFFER_SIZE + 1 * sizeof(char));
+	buf = malloc(BUFFER_SIZE + 1 * sizeof(char));
+	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
+	{
+		free(buf);
+		buf = NULL;
+		return (NULL);
+	}
+	if (!buf)
+		return (NULL);
+	line_buf = fill_buffer(fd, left_from_buf, buf);
+	free(buf);
+	buf = NULL;
 	if (!line_buf)
-		return (free(line_buf), NULL);
-	line_buf = buf;
+		return (NULL);
+	left_from_buf = set_line(line_buf);
+	return (line_buf);
 
-	// printf("line_buf = %s\n", buf);
-	// printf("return read = %zi\n", read(fd, buf, BUFFER_SIZE));
 	printf("buf = %s\n", buf);
-	set_line(line_buf);
 	return (0);
 }
 
@@ -80,13 +120,6 @@ int main()
 	printf("\n -------------- \n");
 	get_next_line(fd);
 	printf("\n -------------- \n");
-	get_next_line(fd);
-	printf("\n -------------- \n");
-	get_next_line(fd);
-	printf("\n -------------- \n");
-	get_next_line(fd);
-	printf("\n -------------- \n");
-	get_next_line(fd);
 		// O_RDONLY: In read-only mode, open the file.
 		// O_WRONLY: In a write-only mode, open the file
     	// O_RDWR: Open the file in reading and write mode
