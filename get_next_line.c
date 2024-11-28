@@ -37,32 +37,33 @@ static char	*set_line(char *line_buf)
 		if (i <= BUFFER_SIZE && line_buf[i] == '\n')
 		{
 			if (i == 0)
-				left_from_buf = ft_substr(line_buf, i, len + 1);
-			left_from_buf = ft_substr(line_buf, i + 1, len + 1);
+				left_from_buf = ft_substr(line_buf, i, len - i);
+			left_from_buf = ft_substr(line_buf, i + 1, len - i);
 			printf("left_from_buf => %s", left_from_buf);
+			line_buf[i + 1] = '\0';
 			return (left_from_buf);
 		}
 		i++;
 	}
 	left_from_buf = ft_strdup(line_buf);
-	printf("left_from_buf => %s", left_from_buf);
+	// printf("left_from_buf => %s", left_from_buf);
 	return (left_from_buf);
 }
 
 static char	*fill_buffer(int fd, char *left_from_buf, char *buf)
 {
-	ssize_t	nb_read;
+	ssize_t	is_read;
 	char	*tmp;
 
-	nb_read = 1;
-	while (nb_read > 0)
+	is_read = 1;
+	while (is_read > 0)
 	{
-		nb_read = read(fd, buf, BUFFER_SIZE);
-		if (nb_read == -1)
+		is_read = read(fd, buf, BUFFER_SIZE);
+		if (is_read == -1)
 			return (free(left_from_buf), NULL);
-		else if (nb_read == 0)
+		else if (is_read == 0)
 			break;
-		buf[nb_read] = 0;
+		// buf[is_read] = 0;
 		if (!left_from_buf)
 			left_from_buf = ft_strdup("");
 		tmp = left_from_buf;
@@ -101,9 +102,6 @@ char	*get_next_line(int fd)
 		return (NULL);
 	left_from_buf = set_line(line_buf);
 	return (line_buf);
-
-	printf("buf = %s\n", buf);
-	return (0);
 }
 
 int main()
@@ -114,12 +112,20 @@ int main()
 	fd = open("test.txt", O_RDONLY);
 	// if (fd == -1)
 	// 	return (1);
-	get_next_line(fd);
+	printf("\n1st read = %s", get_next_line(fd));
 	printf("\n -------------- \n");
 	get_next_line(fd);
+	printf("\n2nd read = %s", get_next_line(fd));
 	printf("\n -------------- \n");
 	get_next_line(fd);
+	printf("\n3th read = %s", get_next_line(fd));
 	printf("\n -------------- \n");
+	get_next_line(fd);
+	printf("\n4th  read = %s", get_next_line(fd));
+	printf("\n -------------- \n");
+	// get_next_line(fd);
+	// printf("\n5th read = %s", get_next_line(fd));
+	// printf("\n -------------- \n");
 		// O_RDONLY: In read-only mode, open the file.
 		// O_WRONLY: In a write-only mode, open the file
     	// O_RDWR: Open the file in reading and write mode
