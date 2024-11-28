@@ -63,7 +63,7 @@ static char	*fill_buffer(int fd, char *left_from_buf, char *buf)
 			return (free(left_from_buf), NULL);
 		else if (is_read == 0)
 			break;
-		// buf[is_read] = 0;
+		buf[is_read] = 0;
 		if (!left_from_buf)
 			left_from_buf = ft_strdup("");
 		tmp = left_from_buf;
@@ -73,6 +73,7 @@ static char	*fill_buffer(int fd, char *left_from_buf, char *buf)
 		if (ft_strchr(buf, '\n'))
 			break;
 	}
+	printf("LEFT (FB) = %s", left_from_buf);
 	return (left_from_buf);
 }
 
@@ -114,18 +115,22 @@ int main()
 	// 	return (1);
 	printf("\n1st read = %s", get_next_line(fd));
 	printf("\n -------------- \n");
-	get_next_line(fd);
+	// get_next_line(fd);
 	printf("\n2nd read = %s", get_next_line(fd));
 	printf("\n -------------- \n");
-	get_next_line(fd);
+	// get_next_line(fd);
 	printf("\n3th read = %s", get_next_line(fd));
 	printf("\n -------------- \n");
-	get_next_line(fd);
+	// get_next_line(fd);
 	printf("\n4th  read = %s", get_next_line(fd));
 	printf("\n -------------- \n");
 	// get_next_line(fd);
-	// printf("\n5th read = %s", get_next_line(fd));
-	// printf("\n -------------- \n");
+	printf("\n5th read = %s", get_next_line(fd));
+	printf("\n -------------- \n");
+	printf("\n6th read = %s", get_next_line(fd));
+	printf("\n -------------- \n");
+	printf("\n7th read = %s", get_next_line(fd));
+	printf("\n -------------- \n");
 		// O_RDONLY: In read-only mode, open the file.
 		// O_WRONLY: In a write-only mode, open the file
     	// O_RDWR: Open the file in reading and write mode

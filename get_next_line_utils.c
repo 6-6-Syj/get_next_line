@@ -89,6 +89,11 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	char	*temp_s;
 
 	i = 0;
+	// while (s2[i] && s2[i] != '\0')
+	// 	i++;
+	// if (s2[i] == '\n')
+	// 	i++;
+	// temp_s = malloc(ft_strlen(s1) + i + 1);
 	temp_s = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (temp_s == NULL)
 		return (NULL);
