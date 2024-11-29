@@ -12,6 +12,32 @@
 
 #include "get_next_line.h"
 
+// char	*empty_line(char *left_buf)
+// {
+// 	char	*tmp;
+// 	size_t	len;
+// 	size_t	i;
+
+// 	len = ft_strlen(left_buf);
+// 	i = 0;
+// 	while (left_buf[i])
+// 	{
+// 		while (left_buf[i] != '\n' && left_buf[i])
+// 			i++;
+// 		while (left_buf[len] != '\n' && left_buf[len])
+// 			len--;
+// 		if (i != len)
+// 		{
+// 			if (i == 0)
+// 				tmp = ft_substr(left_buf, i, len - i);
+// 			tmp = ft_substr(left_buf, i + 1, len - i);
+// 			return (tmp);
+// 		}
+// 		i++;
+// 	}
+// 	return (NULL);
+// }
+
 static char	*set_line(char *line_buf)
 {
 	size_t	i;
@@ -21,6 +47,10 @@ static char	*set_line(char *line_buf)
 	len = ft_strlen(line_buf);
 	i = 0;
 
+	// while (line_buf)
+	// 	empty_line(line_buf);
+	if (line_buf[i] == 0 || line_buf[1] == 0)
+        return (NULL);
 	while (line_buf[i])
 	{
 		if (line_buf[i] == '\n')
@@ -51,7 +81,7 @@ static char	*fill_buffer(int fd, char *left_buf, char *buf)
 		if (is_read == -1)
 			return (free(left_buf), NULL);
 		else if (is_read == 0)
-			return (NULL);
+			break ;
 		if (!left_buf)
 			left_buf = ft_strdup("");
 		tmp = left_buf;
@@ -60,21 +90,19 @@ static char	*fill_buffer(int fd, char *left_buf, char *buf)
 		free(tmp);
 		tmp = NULL;
 		if (ft_strchr(buf, '\n'))
-			break;
+			break ;
+			// return (set_line(left_buf));
 	}
 	// printf("LEFT (FB) = %s", left_buf);
 	return (left_buf);
 }
 
+
 char	*get_next_line(int fd)
 {
-	// DONE --- Recuperer le contenu du buffer et le copy/paste --> *left_buf
-	// search '\n', si R, rappeler read ---- si y'a : extraire la ligne ET le '\n'
-	// Ensuite clear le *char
-	// Variable static --> garde ce qu'il y avait avant dans *char
 	static char *left_buf;
-	char		*buf;
 	char		*line_buf;
+	char		*buf;
 
 	buf = malloc(BUFFER_SIZE + 1 * sizeof(char));
 	if (!buf)
@@ -90,26 +118,24 @@ char	*get_next_line(int fd)
 	return (line_buf);
 }
 
+// int main()
+// {
+// 	int	fd;
+// 	char *next_line;
 
+// 	fd = open("test.txt", O_RDONLY);
 
-int main()
-{
-	int	fd;
-	char *next_line;
+// 	next_line = malloc(1);
+// 	next_line[0] = '\0';
+// 	if (fd == -1)
+// 		return (1);
+// 	while (next_line != NULL)
+// 	{
+// 		next_line = get_next_line(fd);
+// 		printf("\n\nLine = %s", next_line);
+// 		printf("\n -------------- \n");
+// 	}
 
-	fd = open("test.txt", O_RDONLY);
-
-	next_line = malloc(1);
-	next_line[0] = '\0';
-	if (fd == -1)
-		return (1);
-	while (next_line != NULL)
-	{
-		next_line = get_next_line(fd);
-		printf("\n\n1st read = %s", next_line);
-		printf("\n -------------- \n");
-	}
-
-	close(fd);
-	return (0);
-}
+// 	close(fd);
+// 	return (0);
+// }
