@@ -12,32 +12,6 @@
 
 #include "get_next_line.h"
 
-// char	*empty_line(char *left_buf)
-// {
-// 	char	*tmp;
-// 	size_t	len;
-// 	size_t	i;
-
-// 	len = ft_strlen(left_buf);
-// 	i = 0;
-// 	while (left_buf[i])
-// 	{
-// 		while (left_buf[i] != '\n' && left_buf[i])
-// 			i++;
-// 		while (left_buf[len] != '\n' && left_buf[len])
-// 			len--;
-// 		if (i != len)
-// 		{
-// 			if (i == 0)
-// 				tmp = ft_substr(left_buf, i, len - i);
-// 			tmp = ft_substr(left_buf, i + 1, len - i);
-// 			return (tmp);
-// 		}
-// 		i++;
-// 	}
-// 	return (NULL);
-// }
-
 static char	*set_line(char *line_buf)
 {
 	size_t	i;
@@ -46,9 +20,6 @@ static char	*set_line(char *line_buf)
 
 	len = ft_strlen(line_buf);
 	i = 0;
-
-	// while (line_buf)
-	// 	empty_line(line_buf);
 	if (line_buf[i] == 0 || line_buf[1] == 0)
         return (NULL);
 	while (line_buf[i])
@@ -82,16 +53,15 @@ static char	*fill_buffer(int fd, char *left_buf, char *buf)
 			return (free(left_buf), NULL);
 		else if (is_read == 0)
 			break ;
+		buf[is_read] = '\0';
 		if (!left_buf)
 			left_buf = ft_strdup("");
 		tmp = left_buf;
-		buf[is_read] = '\0';
 		left_buf = ft_strjoin(tmp, buf);
 		free(tmp);
 		tmp = NULL;
 		if (ft_strchr(buf, '\n'))
 			break ;
-			// return (set_line(left_buf));
 	}
 	// printf("LEFT (FB) = %s", left_buf);
 	return (left_buf);
@@ -105,15 +75,21 @@ char	*get_next_line(int fd)
 	char		*buf;
 
 	buf = malloc(BUFFER_SIZE + 1 * sizeof(char));
-	if (!buf)
-		return (free(buf), NULL);
 	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
-		return (free(buf), NULL);
+	{
+		free(left_buf);
+		free(buf);
+		left_buf = NULL;
+		buf = NULL;
+		return (NULL);
+	}
+	if (!buf)
+		return (NULL);
 	line_buf = fill_buffer(fd, left_buf, buf);
 	free(buf);
-	// buf = NULL;
+	buf = NULL;
 	if (!line_buf)
-		return (free(line_buf), NULL);
+		return (NULL);
 	left_buf = set_line(line_buf);
 	return (line_buf);
 }
