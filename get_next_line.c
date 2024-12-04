@@ -12,32 +12,24 @@
 
 #include "get_next_line.h"
 
-static char	*set_line(char *line_buf)
+static char *set_line(char *line_buf)
 {
-	size_t	i;
-	size_t	len;
-	char	*left_buf;
+    char    *left_buf;
+    ssize_t    i;
 
-	len = ft_strlen(line_buf);
-	i = 0;
-	if (line_buf[i] == 0 || line_buf[1] == 0)
+    i = 0;
+    while (line_buf[i] != '\n' && line_buf[i] != '\0')
+        i++;
+    if (line_buf[i] == 0 || line_buf[1] == 0)
         return (NULL);
-	while (line_buf[i])
-	{
-		if (line_buf[i] == '\n')
-		{
-			if (i == 0)
-				left_buf = ft_substr(line_buf, i, len - i);
-			left_buf = ft_substr(line_buf, i + 1, len - i);
-			if (!left_buf)
-				return (free(left_buf), NULL);
-			line_buf[i + 1] = '\0';
-			return (left_buf);
-		}
-		i++;
-	}
-	left_buf = ft_substr(line_buf, i, len - i);
-	return (left_buf);
+    left_buf = ft_substr(line_buf, i + 1, ft_strlen(line_buf) - i);
+    if (*left_buf == 0)
+    {
+        free(left_buf);
+        left_buf = NULL;
+    }
+    line_buf[i + 1] = 0;
+    return (left_buf);
 }
 
 static char	*fill_buffer(int fd, char *left_buf, char *buf)
@@ -67,7 +59,6 @@ static char	*fill_buffer(int fd, char *left_buf, char *buf)
 	return (left_buf);
 }
 
-
 char	*get_next_line(int fd)
 {
 	static char *left_buf;
@@ -75,7 +66,7 @@ char	*get_next_line(int fd)
 	char		*buf;
 
 	buf = malloc(BUFFER_SIZE + 1 * sizeof(char));
-	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
+	if (fd < 0 || BUFFER_SIZE <= 0)
 	{
 		free(left_buf);
 		free(buf);
@@ -84,7 +75,7 @@ char	*get_next_line(int fd)
 		return (NULL);
 	}
 	if (!buf)
-		return (NULL);
+		return (free(buf), NULL);
 	line_buf = fill_buffer(fd, left_buf, buf);
 	free(buf);
 	buf = NULL;
@@ -107,11 +98,10 @@ char	*get_next_line(int fd)
 // 		return (1);
 // 	while (next_line != NULL)
 // 	{
+// 		free(next_line);
 // 		next_line = get_next_line(fd);
-// 		printf("\n\nLine = %s", next_line);
-// 		printf("\n -------------- \n");
+// 		printf("\nLine = %s\n", next_line);
+// 		printf("------------------------------------------------------------------------------------");
 // 	}
-
-// 	close(fd);
 // 	return (0);
 // }

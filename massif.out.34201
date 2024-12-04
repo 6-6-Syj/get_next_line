@@ -1,0 +1,1229 @@
+desc: (none)
+cmd: ./a.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=164193
+mem_heap_B=1
+mem_heap_extra_B=23
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=342710
+mem_heap_B=1409
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=445765
+mem_heap_B=1458
+mem_heap_extra_B=126
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=653104
+mem_heap_B=1942
+mem_heap_extra_B=146
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1942 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 767 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 767 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 767 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 767 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n2: 145 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 145 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 145 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 145 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=804970
+mem_heap_B=2030
+mem_heap_extra_B=138
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=1002404
+mem_heap_B=1443
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1245078
+mem_heap_B=1473
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1373445
+mem_heap_B=1423
+mem_heap_extra_B=129
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1554367
+mem_heap_B=1326
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=1786013
+mem_heap_B=1899
+mem_heap_extra_B=109
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=1964028
+mem_heap_B=1661
+mem_heap_extra_B=139
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=2081084
+mem_heap_B=2000
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=2269604
+mem_heap_B=1920
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 569 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 569 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 569 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 569 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n2: 321 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 321 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 321 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 321 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=2389296
+mem_heap_B=1968
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=2551621
+mem_heap_B=1986
+mem_heap_extra_B=142
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=2764576
+mem_heap_B=1649
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=2953550
+mem_heap_B=1626
+mem_heap_extra_B=142
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=3073932
+mem_heap_B=1648
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=3221751
+mem_heap_B=1698
+mem_heap_extra_B=142
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=3430044
+mem_heap_B=2410
+mem_heap_extra_B=166
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2410 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n2: 767 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 767 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 767 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 767 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 613 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 613 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 613 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 613 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=3570201
+mem_heap_B=2117
+mem_heap_extra_B=147
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=3757447
+mem_heap_B=2151
+mem_heap_extra_B=161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=3950277
+mem_heap_B=2056
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=4096288
+mem_heap_B=2396
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=4287649
+mem_heap_B=2490
+mem_heap_extra_B=166
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=4481745
+mem_heap_B=2886
+mem_heap_extra_B=178
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2886 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1119 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1119 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1119 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1119 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 737 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 737 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 737 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 737 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=4743674
+mem_heap_B=3092
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3092 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1119 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1119 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1119 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1119 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 943 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 943 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 943 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 943 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=4948379
+mem_heap_B=3033
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=5098798
+mem_heap_B=2627
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=5244850
+mem_heap_B=2616
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2616 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1119 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1119 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1119 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1119 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 467 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 467 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 467 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 467 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=5451667
+mem_heap_B=2972
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=5651768
+mem_heap_B=2577
+mem_heap_extra_B=159
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=5799304
+mem_heap_B=2568
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=6028956
+mem_heap_B=2508
+mem_heap_extra_B=124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=6150953
+mem_heap_B=2876
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=6333612
+mem_heap_B=2472
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2472 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1119 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1119 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1119 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1119 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 323 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 323 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 323 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 323 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=6518994
+mem_heap_B=2517
+mem_heap_extra_B=155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=6701498
+mem_heap_B=2806
+mem_heap_extra_B=178
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=6888235
+mem_heap_B=2505
+mem_heap_extra_B=167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=7136656
+mem_heap_B=3008
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=7327796
+mem_heap_B=2826
+mem_heap_extra_B=150
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=7453995
+mem_heap_B=2529
+mem_heap_extra_B=159
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=7643069
+mem_heap_B=2497
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=7829337
+mem_heap_B=2525
+mem_heap_extra_B=163
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=8080231
+mem_heap_B=2578
+mem_heap_extra_B=158
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=8240943
+mem_heap_B=3539
+mem_heap_extra_B=189
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3539 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 961 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 961 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 961 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 961 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=8415256
+mem_heap_B=3635
+mem_heap_extra_B=189
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3635 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1057 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1057 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1057 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1057 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=8667571
+mem_heap_B=3591
+mem_heap_extra_B=161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=8913865
+mem_heap_B=3545
+mem_heap_extra_B=199
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=9026809
+mem_heap_B=3543
+mem_heap_extra_B=161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=9132152
+mem_heap_B=3563
+mem_heap_extra_B=181
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3563 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 985 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 985 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 985 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 985 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=9238526
+mem_heap_B=3038
+mem_heap_extra_B=170
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=9345428
+mem_heap_B=3083
+mem_heap_extra_B=173
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=9452976
+mem_heap_B=3056
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=9569825
+mem_heap_B=3549
+mem_heap_extra_B=155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=9677093
+mem_heap_B=3581
+mem_heap_extra_B=195
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=9781378
+mem_heap_B=3507
+mem_heap_extra_B=189
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=9890175
+mem_heap_B=3512
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=9997086
+mem_heap_B=3411
+mem_heap_extra_B=189
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=10105034
+mem_heap_B=2972
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=10209700
+mem_heap_B=2941
+mem_heap_extra_B=147
+mem_stacks_B=0
+heap_tree=detailed
+n3: 2941 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1917 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 369 0x401425: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 369 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 369 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 0 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=62
+#-----------
+time=10317614
+mem_heap_B=3002
+mem_heap_extra_B=174
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=10420676
+mem_heap_B=2979
+mem_heap_extra_B=181
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=10525048
+mem_heap_B=2950
+mem_heap_extra_B=178
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=10638673
+mem_heap_B=3374
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=10745936
+mem_heap_B=3008
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=10853290
+mem_heap_B=2981
+mem_heap_extra_B=179
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=10958883
+mem_heap_B=3011
+mem_heap_extra_B=181
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=11065486
+mem_heap_B=3474
+mem_heap_extra_B=150
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=11170076
+mem_heap_B=3233
+mem_heap_extra_B=191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=11276432
+mem_heap_B=3353
+mem_heap_extra_B=199
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3353 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 775 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 775 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 775 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 775 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=72
+#-----------
+time=11384913
+mem_heap_B=3018
+mem_heap_extra_B=174
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=11492092
+mem_heap_B=3553
+mem_heap_extra_B=191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=11599797
+mem_heap_B=3108
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=11652829
+mem_heap_B=3673
+mem_heap_extra_B=199
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3673 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1095 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1095 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1095 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1095 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=76
+#-----------
+time=11735977
+mem_heap_B=3733
+mem_heap_extra_B=187
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3733 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1155 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1155 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1155 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1155 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=77
+#-----------
+time=11793809
+mem_heap_B=3773
+mem_heap_extra_B=195
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3773 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1195 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1195 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1195 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1195 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=78
+#-----------
+time=11868799
+mem_heap_B=3823
+mem_heap_extra_B=193
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3823 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1245 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1245 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1245 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1245 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=79
+#-----------
+time=11946789
+mem_heap_B=3873
+mem_heap_extra_B=191
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3873 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1295 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1295 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1295 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1295 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=80
+#-----------
+time=12027779
+mem_heap_B=3923
+mem_heap_extra_B=189
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3923 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1345 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1345 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1345 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1345 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=81
+#-----------
+time=12094731
+mem_heap_B=3963
+mem_heap_extra_B=197
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3963 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1548 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1548 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1548 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1548 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1385 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1385 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1385 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1385 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=82
+#-----------
+time=12202310
+mem_heap_B=3761
+mem_heap_extra_B=191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=12306603
+mem_heap_B=3831
+mem_heap_extra_B=185
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=12411791
+mem_heap_B=3775
+mem_heap_extra_B=193
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=12531354
+mem_heap_B=3626
+mem_heap_extra_B=142
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=12651436
+mem_heap_B=4149
+mem_heap_extra_B=155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=12660585
+mem_heap_B=4149
+mem_heap_extra_B=155
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4149 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2599 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 2074 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 2074 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 2074 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 525 0x401425: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 525 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 525 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 526 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 526 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 526 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 526 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 0 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=88
+#-----------
+time=12673503
+mem_heap_B=4159
+mem_heap_extra_B=201
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4159 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2599 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 2074 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 2074 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 2074 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 525 0x401425: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 525 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 525 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 530 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 530 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 530 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 530 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=89
+#-----------
+time=12726535
+mem_heap_B=4199
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4199 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2074 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 2074 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 2074 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 2074 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1095 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1095 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1095 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1095 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=90
+#-----------
+time=12809683
+mem_heap_B=4259
+mem_heap_extra_B=197
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4259 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2074 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 2074 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 2074 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 2074 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1155 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1155 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1155 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1155 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=91
+#-----------
+time=12867515
+mem_heap_B=4299
+mem_heap_extra_B=205
+mem_stacks_B=0
+heap_tree=peak
+n4: 4299 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2074 0x40178F: ft_substr (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 2074 0x401406: set_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 2074 0x40122B: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 2074 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1195 0x40184D: ft_strjoin (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+  n1: 1195 0x4012FF: fill_buffer (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+   n1: 1195 0x4011F5: get_next_line (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+    n0: 1195 0x401520: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n1: 1024 0x48E8BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48F7CDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48F6F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F56D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F56D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48DF14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48DF14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48CA79E: printf (printf.c:33)
+         n0: 1024 0x401539: main (in /home/jmagand/Documents/tests/get_next_linev1/a.out)
+ n0: 6 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=92
+#-----------
+time=12975298
+mem_heap_B=3711
+mem_heap_extra_B=153
+mem_stacks_B=0
+heap_tree=empty
